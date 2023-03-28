@@ -1,99 +1,95 @@
+/* Set the margin, padding, and box-sizing for all elements to 0 to ensure consistent layout */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background-color: #f9dcc4;
+	background-color: #f9dcc4;
 }
 
 header {
-    background: white;
-    padding: 20px;
+	background: white;
+	padding: 20px;
 }
 
 h1 {
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 55px;
-    color: #463f3a;
-    text-align: center;
+	font-family: "Fredericka the Great", cursive;
+	font-size: 55px;
+	color: #463f3a;
+	text-align: center;
 }
-
 
 p {
-    font-family: 'Podkova', serif;
-    font-size: 28px;
+	font-family: "Podkova", serif;
+	font-size: 28px;
 }
 
-
-
 .score-board {
-    margin: 20px auto;
-    border: 5px solid white;
-    border-radius: 4px;
-    text-align: center;
-    width: 200px;
-    font-size: 46px;
-    padding: 15px 20px;
-    font-family: 'Podkova', serif;
-    position: relative;
+	margin: 20px auto;
+	border: 5px solid white;
+	border-radius: 4px;
+	text-align: center;
+	width: 200px;
+	font-size: 46px;
+	padding: 15px 20px;
+	font-family: "Podkova", serif;
+	position: relative;
 }
 
 .badge {
-    background: #febf71;
-    font-size: 14px;
-    padding: 2px 10px;
-    font-family: 'Podkova', serif;
+	background: #febf71;
+	font-size: 14px;
+	padding: 2px 10px;
+	font-family: "Podkova", serif;
 }
 
 #user-label {
-    position: absolute;
-    top: 30px;
-    left: -25px;
-    border-radius: 20px;
-    font-weight: bold;
-
+	position: absolute;
+	top: 30px;
+	left: -25px;
+	border-radius: 20px;
+	font-weight: bold;
 }
 
 #computer-label {
-    position: absolute;
-    top: 30px;
-    right: -30px;
-    border-radius: 20px;
-    font-weight: bold;
+	position: absolute;
+	top: 30px;
+	right: -30px;
+	border-radius: 20px;
+	font-weight: bold;
 }
 
 .result {
-    text-align: center;
+	text-align: center;
 }
 
-.result>p {
-    font-size: 50px;
-    font-weight: bold;
+.result > p {
+	font-size: 50px;
+	font-weight: bold;
 }
-
 
 .choices {
-    margin-top: 40px;
-    text-align: center;
+	margin-top: 40px;
+	text-align: center;
 }
 
 .choice {
-    display: inline-block;
-    border-radius: 50%;
-    padding: 30px;
-    max-width: 225px;
+	display: inline-block;
+	border-radius: 50%;
+	padding: 30px;
+	max-width: 225px;
 }
 
 .choice:hover {
-    cursor: pointer;
-    background: #febf71;
+	cursor: pointer;
+	background: #febf71;
 }
 
 #action-message {
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	margin-top: 10px;
 }
