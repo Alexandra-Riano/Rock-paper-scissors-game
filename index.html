@@ -1,53 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Averia+Libre&family=Caveat:wght@700&family=Coming+Soon&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Henny+Penny&family=Nanum+Pen+Script&family=Poppins:wght@300&family=Rammetto+One&family=Roboto:wght@100;400&family=Rock+Salt&family=Rubik+Puddles&family=Schoolbell&family=Shrikhand&family=Skranji:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Averia+Libre&family=Caveat:wght@700&family=Coming+Soon&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Henny+Penny&family=Hi+Melody&family=Nanum+Pen+Script&family=Podkova&family=Poppins:wght@300&family=Rammetto+One&family=Roboto:wght@100;400&family=Rock+Salt&family=Rubik+Puddles&family=Schoolbell&family=Shrikhand&family=Skranji:wght@700&display=swap"
-        rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&family=Caveat:wght@700&family=Coming+Soon&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Henny+Penny&family=Nanum+Pen+Script&family=Poppins:wght@300&family=Rammetto+One&family=Roboto:wght@100;400&family=Rock+Salt&family=Rubik+Puddles&family=Schoolbell&family=Shrikhand&family=Skranji:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&family=Caveat:wght@700&family=Coming+Soon&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Henny+Penny&family=Hi+Melody&family=Nanum+Pen+Script&family=Podkova&family=Poppins:wght@300&family=Rammetto+One&family=Roboto:wght@100;400&family=Rock+Salt&family=Rubik+Puddles&family=Schoolbell&family=Shrikhand&family=Skranji:wght@700&display=swap" rel="stylesheet">
 
-<body>
+        <body>
+            <!-- The div class "score-board" represents a container for the scores. -->
+            <header>
+                <h1>ROCK PAPER SCISSORS</h1>
+            </header>
+            <!-- The div id "user-label" and "computer-label" represents the labels for the user and the computer scores. -->
+            <div class="score-board">
+                <div id="user-label" class="badge">User</div>
+                <div id="computer-label" class="badge">Comp</div>
+                <!-- The span id "user-score" and "computer-score" represent the scores for the user and the computer. -->
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
 
-    <header>
-        <h1>ROCK PAPER SCISSORS</h1>
-    </header>
+            <div class="result">
+                <p>Let's see who wins!!!</p>
+            </div>
 
+            <div class="choices">
+                <img src="images/rock.jpeg" alt="rock" class="choice" id="r">
+                <img src="images/paper.jpeg" alt="paper" class="choice" id="p">
+                <img src="images/scissors.jpeg" alt="scissors" class="choice" id="s">
+            </div>
 
-    <div class="score-board">
-        <div id="user-label" class="badge">User</div>
-        <div id="computer-label" class="badge">Comp</div>
-        <span id="user-score">0</span>:<span id="computer-score">0</span>
-    </div>
+            <p id="action-message">Choose a paw</p>
 
-    <div class="result">
-        <p>Let's see who wins!!!</p>
-    </div>
-
-    <div class="choices">
-
-        <img src="images/rock.jpeg" alt="rock" class="choice" id="r">
-
-
-        <img src="images/paper.jpeg" alt="paper" class="choice" id="p">
-
-        <img src="images/scissors.jpeg" alt="scissors" class="choice" id="s">
-
-    </div>
-    <p id="action-message">Choose a paw</p>
-
-    <script src="app.js"></script>
-</body>
-
+            <script src="script.js"></script>
+        </body>
+    </head>
 </html>
